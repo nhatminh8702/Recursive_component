@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  max-width: 528px;
+  .input {
+    &:focus {
+      outline: none;
+    }
+    border: 1px #dcdcdc solid;
+    border-radius: 4px;
+    padding: 1.5% 1.5%;
+    width: 96.5%;
+  }
+}

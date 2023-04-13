@@ -1,0 +1,14 @@
+.container {
+  &:hover {
+    cursor: pointer;
+  }
+  user-select: none;
+  padding: 10px 32px;
+  border: 1px #dcdcdc solid;
+  border-radius: 4px;
+  margin: 10px;
+  width: fit-content;
+  &:active {
+    transform: translateY(4px);
+  }
+}

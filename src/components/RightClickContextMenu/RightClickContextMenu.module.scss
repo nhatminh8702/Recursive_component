@@ -1,7 +1,6 @@
 .menu {
-  visibility: hidden;
-  position: absolute;
-  z-index: 10;
+  position: fixed;
+  z-index: 11;
   list-style: none;
   text-align: left;
   padding: 0;

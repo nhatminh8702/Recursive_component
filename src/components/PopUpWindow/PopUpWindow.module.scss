@@ -1,0 +1,36 @@
+.container {
+  background-color: #ffffff;
+  text-align: left;
+  border-radius: 10px;
+  padding: 0;
+  margin: auto 0;
+  z-index: 13;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  border: 1px #dcdcdc solid;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  .title {
+    background-color: #48647f;
+    color: #ffffff;
+    padding: 10px 10px;
+    border-radius: 4px 4px 0px 0px;
+    width: 500px;
+  }
+  .field {
+    padding: 10px 10px;
+    .filedTitle {
+      color: #48647f;
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

@@ -1,4 +1,4 @@
-const data = [
+export const initData = [
   { id: "0", name: "Phòng ban 1", level: 1, code: "DPM0-0", children: [] },
   {
     id: "1",
@@ -86,4 +86,19 @@ const data = [
   { id: "10", name: "Phòng ban 1", level: 1, code: "DPM0-10", children: [] },
   { id: "11", name: "Phòng ban 1", level: 1, code: "DPM0-11", children: [] },
 ];
-export default data;
+
+const k = "112";
+const find = (list, id) => {
+  let result;
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].id === id) {
+      result = list[i];
+      break;
+    } else {
+      result = find(list[i].children, id);
+      if (result) break;
+    }
+  }
+  return result;
+};
+
